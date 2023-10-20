@@ -6,24 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class FormDelfinClassActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-
-
+        setContentView(R.layout.activity_form_delfin_class);
     }
 
     public void onClickGoToView (Class viewToGo){
-        Intent intent = new Intent(MainActivity.this, viewToGo);
+        Intent intent = new Intent(FormDelfinClassActivity.this, viewToGo);
         startActivity(intent);
     }
 
-    public void goToDelfinClass (View v) {
-        this.onClickGoToView(FormDelfinClassActivity.class);
+    public void goToHome (View v) {
+        this.onClickGoToView(MainActivity.class);
     }
 }

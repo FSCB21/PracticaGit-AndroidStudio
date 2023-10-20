@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PracticaGitAndroidStudio"
         tools:targetApi="31">
         <activity
+            android:name=".FormDelfinClassActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
